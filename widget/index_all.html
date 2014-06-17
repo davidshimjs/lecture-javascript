@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" type="text/css" href="css/ajaxui.css">
+<script type="text/javascript" src="js/lib/jquery.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="container" class="container">
+		<ul class="item_list _keywordContainer"></ul>
+		<div class="detail _detailContainer">
+		</div>
+		<div class="navi">
+			<a href="#" class="prev _prev"><span class="blind">이전보기</span></a>
+			<a href="#" class="next _next"><span class="blind">다음보기</span></a>
+		</div>
+	</div>
+</div>
+<script id="tpl_item" type="text/template">
+<li data-index="{{index}}" class="_keyword">{{keyword}}</li>
+</script>
+<script id="tpl_detail_view" type="text/template">
+<h3><span>{{pubDate}}</span><a href="{{link}}" target="_blank">{{title}}</a></h3>
+<p>
+	{{description}}
+</p>
+</script>
+<script type="text/javascript" src="js/Widget.js"></script>
+<script type="text/javascript">
+var widget = new Widget();
+</script>
+</body>
+</html>
