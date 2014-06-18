@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+<div id="box" style="width:100px;height:100px;background-color:red;"></div>
+<script>
+(function(){
+  var foo = function () {
+    document.getElementById('box').style.display = 'none';
+  };
+
+  setTimeout(foo(), 3000);
+});
+</script>
+</body>
+</html>

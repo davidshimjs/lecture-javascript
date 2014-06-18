@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+<div id="output"></div>
+<script type="text/javascript">
+var Human = function () {
+};
+
+Human.prototype = {
+    _info: {},
+    setName: function (sName) {
+        this._info.name = sName;
+    },
+    getName: function () {
+        return this._info.name;
+    },
+    setAge: function (nAge) {
+        this._info.age = nAge;
+    },
+    getAge: function () {
+        return this._info.age;
+    }
+};
+
+var john = new Human();
+var cindy = new Human();
+john.setName('John Parker');
+john.setAge(30);
+cindy.setName('Cindy Smith');
+cindy.setAge(27);
+var output = document.getElementById('output');
+output.innerHTML = "John : " + john.getName() + ' - ' + john.getAge();
+</script>
+</body>
+</html>

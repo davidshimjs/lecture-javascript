@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+<script>
+var obj = {
+  class : 'blah',
+  name : 'john',
+  in : 'bar',
+  for : 'foo',
+  do : 'baz',
+};
+
+var strings = [];
+for (var k in obj) if (obj.hasOwnProperty(k)) {
+   strings.push(k + ' -> ' + obj[k]);
+}
+
+document.write(strings.join('<br/>'));
+</script>
+</body>
+</html>
